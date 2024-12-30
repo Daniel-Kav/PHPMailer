@@ -13,14 +13,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();                              // Use SMTP
         $mail->Host = 'smtp.gmail.com';               // Set Gmail SMTP server
         $mail->SMTPAuth = true;                       // Enable SMTP authentication
-        $mail->Username = 'your-email@gmail.com';     // Your Gmail address
-        $mail->Password = 'your-email-password';      // Your Gmail password (or app password if 2FA is enabled)
+        $mail->Username = 'dankavatha01@gmail.com';     // Your Gmail address
+        $mail->Password = '';      // Your Gmail password (or app password if 2FA is enabled)
         $mail->SMTPSecure = 'tls';                    // Encryption type
         $mail->Port = 587;                            // SMTP port for TLS
 
         // Sender and recipient details
         $mail->setFrom($_POST['email'], 'Form Sender');   // Sender email and name
-        $mail->addAddress('recipient@example.com');       // Recipient email
+        $mail->addAddress('rchlkvth@gmail.com');       // Recipient email
 
         // Email content
         $mail->isHTML(true);                             // Set email format to HTML
